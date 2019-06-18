@@ -20,6 +20,8 @@ public class Ticket implements java.io.Serializable {
 
 	private java.lang.String incidentInformation;
 
+	private java.lang.String actionType;
+
 	public Ticket() {
 	}
 
@@ -79,10 +81,18 @@ public class Ticket implements java.io.Serializable {
 		this.incidentInformation = incidentInformation;
 	}
 
+	public java.lang.String getActionType() {
+		return this.actionType;
+	}
+
+	public void setActionType(java.lang.String actionType) {
+		this.actionType = actionType;
+	}
+
 	public Ticket(java.lang.String problemType, java.lang.String assignToGroup,
 			java.lang.String action, java.lang.String source,
 			java.lang.String description, int state,
-			java.lang.String incidentInformation) {
+			java.lang.String incidentInformation, java.lang.String actionType) {
 		this.problemType = problemType;
 		this.assignToGroup = assignToGroup;
 		this.action = action;
@@ -90,6 +100,7 @@ public class Ticket implements java.io.Serializable {
 		this.description = description;
 		this.state = state;
 		this.incidentInformation = incidentInformation;
+		this.actionType = actionType;
 	}
 
 }
