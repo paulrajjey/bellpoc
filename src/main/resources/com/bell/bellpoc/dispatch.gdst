@@ -57,13 +57,13 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>459</width>
-          <header>Problem Types</header>
+          <width>214</width>
+          <header>Ticket State</header>
           <constraintValueType>1</constraintValueType>
-          <factField>problemType</factField>
-          <fieldType>String</fieldType>
+          <factField>state</factField>
+          <fieldType>Integer</fieldType>
           <operator>==</operator>
-          <valueList>INTERFACE-DOWN,INTERFACE-PKT-INFRA-LINK-3-UPDOWN,INTERFACE-DEMON-4-SLNP-TRAP-LINK-DOWN,INTERFACE-UNSTABLE</valueList>
+          <valueList>1,2,3,4,5,6</valueList>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -74,28 +74,13 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>260</width>
-          <header>Problem contains(Expression)</header>
+          <width>355</width>
+          <header>Incident Information</header>
           <constraintValueType>1</constraintValueType>
-          <factField>problemType</factField>
+          <factField>incidentInformation</factField>
           <fieldType>String</fieldType>
-          <operator>matches</operator>
-          <parameters/>
-          <binding></binding>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>232</width>
-          <header>Description</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>description</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
+          <operator>!=</operator>
+          <valueList>TASK ADDED</valueList>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -119,6 +104,21 @@
       <boundName>ticket</boundName>
       <factField>action</factField>
       <type>String</type>
+      <update>false</update>
+    </set-field-col52>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>100</width>
+      <header>Action Type</header>
+      <boundName>ticket</boundName>
+      <factField>actionType</factField>
+      <type>String</type>
+      <valueList>ASSIGNMENT,TASK</valueList>
       <update>false</update>
     </set-field-col52>
   </actionCols>
@@ -159,6 +159,7 @@
     <list>
       <value>
         <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -173,237 +174,27 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>INOC-SURVIELLANCE</valueString>
+        <valueString>BBNOC-AD-CO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>INTERFACE-DEMON-4-SLNP-TRAP-LINK-DOWN</valueString>
+        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>TASK ADDED</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>ADD TASK</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>BBNOC</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">2</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>UI</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>INOC-SURVIELLANCE</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>INTERFACE-DOWN</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>BBNOC</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">3</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>UI</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>INOC-SURVIELLANCE</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>INTERFACE-PKT-INFRA-LINK-3-UPDOWN</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>BBNOC</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">4</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>UI</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>INOC-SURVIELLANCE</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>INTERFACE-UNSTABLE</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>INTERFACE-AE8-UNASTABLE</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>BBNOC</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">5</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>UI</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>INOC-SURVIELLANCE</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>OSPF.*</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>BBNOC</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">6</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>UI</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>INOC-SURVIELLANCE</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>BGF.*</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>BBNOC</valueString>
+        <valueString>TASK</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
