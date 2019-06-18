@@ -114,6 +114,21 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
+      <width>100</width>
+      <header>ActionType</header>
+      <boundName>ticket</boundName>
+      <factField>actionType</factField>
+      <type>String</type>
+      <valueList>ASSIGNMENT,TASK</valueList>
+      <update>false</update>
+    </set-field-col52>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
       <width>236</width>
       <header>action</header>
       <boundName>ticket</boundName>
@@ -194,6 +209,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>ASSIGNMENT</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>BBNOC</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -233,6 +253,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>ASSIGNMENT</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -280,6 +305,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>ASSIGNMENT</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>BBNOC</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -319,6 +349,11 @@
       </value>
       <value>
         <valueString>INTERFACE-AE8-UNASTABLE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>ASSIGNMENT</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -366,6 +401,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>ASSIGNMENT</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>BBNOC</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -405,6 +445,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>ASSIGNMENT</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
