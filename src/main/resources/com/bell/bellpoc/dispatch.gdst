@@ -118,7 +118,7 @@
       <boundName>ticket</boundName>
       <factField>actionType</factField>
       <type>String</type>
-      <valueList>ASSIGNMENT,TASK</valueList>
+      <valueList>ASSIGNMENT,TASK,DISPATCH</valueList>
       <update>false</update>
     </set-field-col52>
   </actionCols>
@@ -169,7 +169,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>UI</valueString>
+        <valueString>AUTOMATION</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -184,17 +184,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>TASK ADDED</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>ADD TASK</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>TASK</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>DISPATCH</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
