@@ -23,6 +23,23 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
+          <width>224</width>
+          <header>Source System</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>source</factField>
+          <fieldType>String</fieldType>
+          <operator>==</operator>
+          <valueList>UI,AUTOMATION,ESIDE,ONESIDE</valueList>
+          <parameters/>
+          <binding></binding>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
           <width>191</width>
           <header>Group assigned To</header>
           <constraintValueType>1</constraintValueType>
@@ -40,12 +57,13 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>281</width>
+          <width>459</width>
           <header>Problem Types</header>
           <constraintValueType>1</constraintValueType>
           <factField>problemType</factField>
           <fieldType>String</fieldType>
-          <operator>in</operator>
+          <operator>==</operator>
+          <valueList>INTERFACE-DOWN,INTERFACE-PKT-INFRA-LINK-3-UPDOWN,INTERFACE-DEMON-4-SLNP-TRAP-LINK-DOWN</valueList>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -119,12 +137,83 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>UI</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>INOC-SURVIELLANCE</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>INTERFACE-DOWN,INTERFACE-PKT-INFRA-LINK-3-UPDOWN,INTERFACE-DEMON-4-SLNP-TRAP-LINK-DOWN</valueString>
+        <valueString>INTERFACE-DEMON-4-SLNP-TRAP-LINK-DOWN</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>BBNOC</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>UI</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>INOC-SURVIELLANCE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>INTERFACE-DOWN</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>BBNOC</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>UI</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>INOC-SURVIELLANCE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>INTERFACE-PKT-INFRA-LINK-3-UPDOWN</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
