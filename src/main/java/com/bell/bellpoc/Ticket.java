@@ -12,6 +12,8 @@ public class Ticket implements java.io.Serializable {
 	private java.lang.String assignToGroup;
 	private java.lang.String action;
 
+	private java.lang.String source;
+
 	public Ticket() {
 	}
 
@@ -39,11 +41,20 @@ public class Ticket implements java.io.Serializable {
 		this.action = action;
 	}
 
+	public java.lang.String getSource() {
+		return this.source;
+	}
+
+	public void setSource(java.lang.String source) {
+		this.source = source;
+	}
+
 	public Ticket(java.lang.String problemType, java.lang.String assignToGroup,
-			java.lang.String action) {
+			java.lang.String action, java.lang.String source) {
 		this.problemType = problemType;
 		this.assignToGroup = assignToGroup;
 		this.action = action;
+		this.source = source;
 	}
 
 }
