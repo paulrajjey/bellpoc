@@ -16,6 +16,10 @@ public class Ticket implements java.io.Serializable {
 
 	private java.lang.String description;
 
+	private int state;
+
+	private java.lang.String incidentInformation;
+
 	public Ticket() {
 	}
 
@@ -59,14 +63,33 @@ public class Ticket implements java.io.Serializable {
 		this.description = description;
 	}
 
+	public int getState() {
+		return this.state;
+	}
+
+	public void setState(int state) {
+		this.state = state;
+	}
+
+	public java.lang.String getIncidentInformation() {
+		return this.incidentInformation;
+	}
+
+	public void setIncidentInformation(java.lang.String incidentInformation) {
+		this.incidentInformation = incidentInformation;
+	}
+
 	public Ticket(java.lang.String problemType, java.lang.String assignToGroup,
 			java.lang.String action, java.lang.String source,
-			java.lang.String description) {
+			java.lang.String description, int state,
+			java.lang.String incidentInformation) {
 		this.problemType = problemType;
 		this.assignToGroup = assignToGroup;
 		this.action = action;
 		this.source = source;
 		this.description = description;
+		this.state = state;
+		this.incidentInformation = incidentInformation;
 	}
 
 }
