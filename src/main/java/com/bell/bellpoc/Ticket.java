@@ -14,6 +14,8 @@ public class Ticket implements java.io.Serializable {
 
 	private java.lang.String source;
 
+	private java.lang.String description;
+
 	public Ticket() {
 	}
 
@@ -49,12 +51,22 @@ public class Ticket implements java.io.Serializable {
 		this.source = source;
 	}
 
+	public java.lang.String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
 	public Ticket(java.lang.String problemType, java.lang.String assignToGroup,
-			java.lang.String action, java.lang.String source) {
+			java.lang.String action, java.lang.String source,
+			java.lang.String description) {
 		this.problemType = problemType;
 		this.assignToGroup = assignToGroup;
 		this.action = action;
 		this.source = source;
+		this.description = description;
 	}
 
 }
