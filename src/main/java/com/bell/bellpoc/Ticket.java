@@ -6,12 +6,44 @@ package com.bell.bellpoc;
 
 public class Ticket implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Ticket() {
-    }
+	private java.lang.String problemType;
+	private java.lang.String assignToGroup;
+	private java.lang.String action;
 
+	public Ticket() {
+	}
 
+	public java.lang.String getProblemType() {
+		return this.problemType;
+	}
 
+	public void setProblemType(java.lang.String problemType) {
+		this.problemType = problemType;
+	}
+
+	public java.lang.String getAssignToGroup() {
+		return this.assignToGroup;
+	}
+
+	public void setAssignToGroup(java.lang.String assignToGroup) {
+		this.assignToGroup = assignToGroup;
+	}
+
+	public java.lang.String getAction() {
+		return this.action;
+	}
+
+	public void setAction(java.lang.String action) {
+		this.action = action;
+	}
+
+	public Ticket(java.lang.String problemType, java.lang.String assignToGroup,
+			java.lang.String action) {
+		this.problemType = problemType;
+		this.assignToGroup = assignToGroup;
+		this.action = action;
+	}
 
 }
